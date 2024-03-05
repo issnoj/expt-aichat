@@ -16,7 +16,7 @@ export const ChatMessage = ({ message }: Props) => {
       <div className="font-bold">{message.role}</div>
       <div className="mt-1 overflow-hidden">
         <MemoizedReactMarkdown
-          className="break-words leading-relaxed"
+          className="prose break-words leading-relaxed"
           remarkPlugins={[remarkGfm, remarkMath]}
           rehypePlugins={[rehypeKatex]}
           components={{
